@@ -12,6 +12,8 @@ static Sound explosion_sound;
 void create_shoot(void) {
     shoot_sound = LoadSound("assets/sounds/shoot.wav");
     explosion_sound = LoadSound("assets/sounds/explosion.wav");
+
+    SetSoundVolume(explosion_sound, .75f);
 }
 
 void reset_shoot(Sprite* sprite) {
