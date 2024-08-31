@@ -24,9 +24,9 @@ bool Button(Rectangle rect, const char* text, bool centered) {
     }
 
     if (clicked) {
-        DrawRectangle(button_rect.x, button_rect.y, button_rect.width+3, button_rect.height+3, WHITE);
+        DrawRectangle(button_rect.x, button_rect.y, button_rect.width+5, button_rect.height+5, WHITE);
     } else {
-        DrawRectangle(button_rect.x-3, button_rect.y-3, button_rect.width+3, button_rect.height+3, WHITE);
+        DrawRectangle(button_rect.x-5, button_rect.y-5, button_rect.width+5, button_rect.height+5, WHITE);
     }
     DrawRectangleRec(button_rect, gray);
 
