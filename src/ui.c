@@ -26,6 +26,9 @@ void draw_ui(uint8_t lives, uint8_t level, void (*reset)(void), bool* paused) {
         DrawTexturePro(hearts, (Rectangle){0, 0, hearts.width, hearts.height}, (Rectangle){i*(scaled_width+10), 0, scaled_width, scaled_height}, (Vector2){0, 0}, 0, WHITE);
     }
     DrawText(TextFormat("Level: %d", level), swidth/2, 0, 48, WHITE);
+    if(IsKeyDown(KEY_F)) {
+        DrawFPS(0, sheight/2);
+    }
 
     if (*paused) {
         DrawRectangle(0, 0, swidth, sheight, (Color){0, 0, 0, 128});

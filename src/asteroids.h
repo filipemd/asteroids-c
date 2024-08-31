@@ -1,8 +1,8 @@
 #ifndef ASTEROIDS_H
 #define ASTEROIDS_H
 
-#include "spaceship.h"
 #include <stdint.h>
+#include "spaceship.h"
 
 unsigned asteroid_amount;
 uint8_t level;

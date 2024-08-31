@@ -9,7 +9,7 @@ int main(void) {
     InitAudioDevice();
 
     SetTargetFPS(60);
-    SetExitKey(0);
+    SetExitKey(KEY_NULL);
 
     start();
 

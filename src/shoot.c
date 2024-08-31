@@ -1,8 +1,8 @@
+#include <math.h>
+
 #include "shoot.h"
 #include "main.h"
-#include "raylib.h"
-
-#include <math.h>
+#include "paths.h"
 
 static Shoot shoot;
 
@@ -10,8 +10,8 @@ static Sound shoot_sound;
 static Sound explosion_sound;
 
 void create_shoot(void) {
-    shoot_sound = LoadSound("assets/sounds/shoot.wav");
-    explosion_sound = LoadSound("assets/sounds/explosion.wav");
+    shoot_sound = LoadSound(SHOOT_SOUND);
+    explosion_sound = LoadSound(EXPLOSION_SOUND);
 
     SetSoundVolume(explosion_sound, .75f);
 }

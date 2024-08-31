@@ -7,6 +7,7 @@
 #include "main.h"
 #include "asteroids.h"
 
+#include "paths.h"
 #include "shoot.h"
 #include "spaceship.h"
 #include "sprite.h"
@@ -68,8 +69,8 @@ void reset_asteroids(void) {
 void create_asteroids(Spaceship* spaceship_pointer) {
     spaceship = spaceship_pointer;
 
-    asteroid_texture = LoadTexture("assets/textures/asteroid.png");
-    small_asteroid_texture = LoadTexture("assets/textures/small_asteroid.png");
+    asteroid_texture = LoadTexture(ASTEROID_PATH);
+    small_asteroid_texture = LoadTexture(SMALL_ASTEROID_PATH);
 
     reset_asteroids();
 }

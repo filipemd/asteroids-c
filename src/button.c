@@ -1,6 +1,6 @@
-#include "button.h"
-#include "raylib.h"
 #include <stdint.h>
+
+#include "button.h"
 
 #define FONT_SIZE 48
 

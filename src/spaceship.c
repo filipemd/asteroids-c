@@ -1,11 +1,11 @@
 #include <raylib.h>
 #include <math.h>
 
+#include "paths.h"
 #include "main.h"
-#include "shoot.h"
+
 #include "spaceship.h"
 
-#include "sprite.h"
 #include "wrap_position.h"
 #include "timer.h"
 
@@ -50,7 +50,7 @@ void reset_spaceship(void) {
 }
 
 void create_spaceship(void) {
-    create_sprite(&spaceship.sprite, "assets/textures/spaceship.png", (Vector2){swidth/2, sheight/2}, 7, 0);
+    create_sprite(&spaceship.sprite, SPACESHIP_PATH, (Vector2){swidth/2, sheight/2}, 7, 0);
     create_shoot();
 
     spaceship.lives = LIVES_AMOUNT;

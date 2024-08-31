@@ -1,9 +1,10 @@
 #ifndef SPACESHIP_H
 #define SPACESHIP_H
 
+#include <stdint.h>
+
 #include "sprite.h"
 #include "shoot.h"
-#include <stdint.h>
 
 typedef struct spaceship {
     Sprite sprite;
