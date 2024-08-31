@@ -8,7 +8,7 @@
 
 #include "button.h"
 
-Texture2D hearts;
+static Texture2D hearts;
 
 void create_ui(void) {
     hearts = LoadTexture("assets/icons/heart.png");

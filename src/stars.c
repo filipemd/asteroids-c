@@ -3,8 +3,8 @@
 #include "main.h"
 #include "stars.h"
 
-int* x;
-int* y;
+static int* x;
+static int* y;
 
 void create_stars(void) {
     x = LoadRandomSequence(STAR_AMOUNT, 0, swidth);
