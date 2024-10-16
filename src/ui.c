@@ -8,10 +8,12 @@
 
 #include "button.h"
 
+#include "paths.h"
+
 static Texture2D hearts;
 
 void create_ui(void) {
-    hearts = LoadTexture("assets/icons/heart.png");
+    hearts = LoadTexture(HEART_PATH);
 }
 
 void draw_ui(uint8_t lives, uint8_t level, void (*reset)(void), bool* paused) {

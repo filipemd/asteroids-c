@@ -4,6 +4,7 @@
 #define SPACESHIP_PATH "assets/textures/spaceship.png"
 #define ASTEROID_PATH "assets/textures/asteroid.png"
 #define SMALL_ASTEROID_PATH "assets/textures/small_asteroid.png"
+#define HEART_PATH "assets/icons/heart.png"
 
 #define SHOOT_SOUND "assets/sounds/shoot.wav"
 #define EXPLOSION_SOUND "assets/sounds/explosion.wav"

@@ -46,6 +46,10 @@ Spaceship* get_spaceship(void) {
 void reset_spaceship(void) {
     spaceship.sprite.hide = false;
     spaceship.lives = LIVES_AMOUNT;
+
+    spaceship.sprite.rect.x = swidth/2;
+    spaceship.sprite.rect.x = sheight/2;
+
     stop_timer(&hit_delay);
 }
 
