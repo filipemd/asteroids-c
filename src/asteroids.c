@@ -1,10 +1,9 @@
-#include <raylib.h>
+#include "main.h"
 
 #include <stdint.h>
 #include <stdlib.h>
 #include <math.h>
 
-#include "main.h"
 #include "asteroids.h"
 
 #include "paths.h"

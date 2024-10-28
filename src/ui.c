@@ -41,8 +41,12 @@ void draw_ui(uint8_t lives, uint8_t level, void (*reset)(void), bool* paused) {
             reset();
             *paused = false;
         }
+
+        // Não tem como fechar uma janela em um navegador.
+        #ifndef PLATFORM_WEB
         if (Button((Rectangle){swidth/2, sheight/2+90, 300, 75}, "Exit", true))
             close_window = true;
+        #endif
     }
     if (lives == 0) {
         if(Button((Rectangle){swidth/2, sheight/2, 300, 75}, "Play Again", true))

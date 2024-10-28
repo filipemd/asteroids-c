@@ -4,8 +4,8 @@
 #include <stdint.h>
 #include "spaceship.h"
 
-unsigned asteroid_amount;
-uint8_t level;
+extern unsigned asteroid_amount;
+extern uint8_t level;
 
 void reset_asteroids(void);
 void create_asteroids(Spaceship* spaceship);

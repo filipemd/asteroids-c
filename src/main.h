@@ -1,16 +1,20 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#ifdef __EMSCRIPTEN__
+#include "raylib.h"
+#else
 #include <raylib.h>
+#endif
 #include <stdint.h>
 
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 
-uint16_t swidth;
-uint16_t sheight;
+extern uint16_t swidth;
+extern uint16_t sheight;
 
-bool close_window;
+extern bool close_window;
 
 #define SPEED 600
 #define ACCELERATION 2400
