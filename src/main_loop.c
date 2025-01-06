@@ -8,6 +8,9 @@
 #include "stars.h"
 
 #include "ui.h"
+#include "title_screen.h"
+
+enum scenes scene = TITLE_SCREEN;
 
 static Spaceship* spaceship;
 static bool paused = false;
@@ -31,7 +34,7 @@ void start(void) {
 }
 
 void main_loop(float delta) {
-    if (!paused) {
+    if (!paused && scene == GAME) {
         update_spaceship(delta);
         update_asteroids(delta);
     }
@@ -42,10 +45,17 @@ void main_draw(void) {
 
     draw_stars();
 
-    draw_spaceship();
-    draw_asteroids();
+    switch(scene) {
+    case TITLE_SCREEN:
+        draw_title_screen();
+        break;
+    case GAME:
+        draw_spaceship();
+        draw_asteroids();
 
-    draw_ui(spaceship->lives, level, reset, &paused);
+        draw_ui(spaceship->lives, level, reset, &paused);
+        break;
+    }
 }
 
 void end(void) {

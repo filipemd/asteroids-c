@@ -8,6 +8,9 @@
 #endif
 #include <stdint.h>
 
+#define LICENSE "GPL-3.0"
+#define VERSION "1.0.0"
+
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 
